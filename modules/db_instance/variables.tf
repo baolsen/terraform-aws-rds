@@ -295,6 +295,12 @@ variable "monitoring_role_permissions_boundary" {
   default     = null
 }
 
+variable "monitoring_role_path" {
+  description = "The path for the monitoring IAM role"
+  type        = string
+  default     = null
+}
+
 variable "create_monitoring_role" {
   description = "Create IAM role with a defined name that permits RDS to send enhanced monitoring metrics to CloudWatch Logs."
   type        = bool

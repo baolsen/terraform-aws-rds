@@ -278,6 +278,12 @@ variable "monitoring_role_permissions_boundary" {
   default     = null
 }
 
+variable "monitoring_role_path" {
+  description = "The path for the monitoring IAM role"
+  type        = string
+  default     = null
+}
+
 variable "database_insights_mode" {
   description = "The mode of Database Insights that is enabled for the instance. Valid values: standard, advanced"
   type        = string

@@ -61,6 +61,7 @@ module "wrapper" {
   monitoring_role_arn                                    = try(each.value.monitoring_role_arn, var.defaults.monitoring_role_arn, null)
   monitoring_role_description                            = try(each.value.monitoring_role_description, var.defaults.monitoring_role_description, null)
   monitoring_role_name                                   = try(each.value.monitoring_role_name, var.defaults.monitoring_role_name, "rds-monitoring-role")
+  monitoring_role_path                                   = try(each.value.monitoring_role_path, var.defaults.monitoring_role_path, null)
   monitoring_role_permissions_boundary                   = try(each.value.monitoring_role_permissions_boundary, var.defaults.monitoring_role_permissions_boundary, null)
   monitoring_role_use_name_prefix                        = try(each.value.monitoring_role_use_name_prefix, var.defaults.monitoring_role_use_name_prefix, false)
   multi_az                                               = try(each.value.multi_az, var.defaults.multi_az, false)

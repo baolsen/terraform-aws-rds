@@ -201,6 +201,7 @@ resource "aws_iam_role" "enhanced_monitoring" {
   name_prefix          = local.monitoring_role_name_prefix
   assume_role_policy   = data.aws_iam_policy_document.enhanced_monitoring.json
   description          = var.monitoring_role_description
+  path                 = var.monitoring_role_path
   permissions_boundary = var.monitoring_role_permissions_boundary
 
   tags = merge(

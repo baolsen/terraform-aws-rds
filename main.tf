@@ -142,6 +142,7 @@ module "db_instance" {
   monitoring_role_use_name_prefix      = var.monitoring_role_use_name_prefix
   monitoring_role_description          = var.monitoring_role_description
   create_monitoring_role               = var.create_monitoring_role
+  monitoring_role_path                 = var.monitoring_role_path
   monitoring_role_permissions_boundary = var.monitoring_role_permissions_boundary
   database_insights_mode               = var.database_insights_mode
 
